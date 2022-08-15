@@ -18,8 +18,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 }
 .header {
   width: 60%;
@@ -84,14 +84,28 @@ h2 {
   font-size: 20px;
 }
 .sentence {
-  padding: 3rem;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 60%;
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-left: gray;
+  border-left-style: solid;
+}
+
+.question {
+  background-color: white;
 }
 
 .answer {
-  padding: 3rem;
-  margin-bottom: 3rem;
   background-color: lightyellow;
+}
+
+.answer .sentence__expression {
+  font-weight: 400;
 }
 
 footer {
@@ -100,4 +114,8 @@ footer {
   font-size: 1.8rem;
   text-decoration: none;
   margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
 }
