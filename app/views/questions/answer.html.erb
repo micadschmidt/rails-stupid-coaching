@@ -1,5 +1,12 @@
-<%= @answer %>
 
-<footer>
+<div class="sentence">
+    <span class="sentence__expression"><%= params[:question] %></span>
+    <span class="sentence__expressor" ><em>-You</em></span>
+</div>
+<div class="sentence answer">
+    <span class="sentence__expression"><strong><%= @answer %></strong></span>
+    <span class="sentence__expressor" ><em>-Your coach</em></span>
+</div>
+<footer class="blacklink">
   <%= link_to "Ask new question", ask_path %>
 </footer>
